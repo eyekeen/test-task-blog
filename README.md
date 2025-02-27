@@ -1,5 +1,7 @@
 # Инструкция по настройке Laravel-приложения в Docker
 
+laravel 12, php 8.2 and apache
+
 ## 1. Клонирование репозитория
 Сначала клонируйте репозиторий с помощью команды:
 
@@ -31,13 +33,6 @@ docker-compose exec app bash
 
 ```bash
 composer install && php artisan key:generate && php artisan migrate --seed
-```
-
----
-
-### 4. Даем права пользователю www-data
-```
-docker-compose exec app bash
 ```
 
 ```
